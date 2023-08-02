@@ -1,69 +1,100 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 body {
-    height: 100vh;
-    overflow: hidden;
-    background: url('bg1.jpg') no-repeat;
-    background-size: cover;
-    font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+  overflow: hidden;
+  background: url("bg1.jpg") no-repeat;
+  background-size: cover;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .container {
-    width: 550px;
-    margin: 50px auto;
-    text-align: center;
+  width: 550px;
+  margin: 50px auto;
+  text-align: center;
 }
 .container img {
-    margin-bottom: 35px;
+  margin-bottom: 35px;
 }
 .container h1 {
-    color: #FD3267;
-    margin-bottom: 25px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    font-size: 60px;
+  color: #fd3267;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 60px;
 }
 .container p {
-    color: white;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 17px;
-    margin-bottom: 60px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 17px;
+  margin-bottom: 60px;
 }
 .counter {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-    padding: 20px;
-    background-color: #0000009e;
-    border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 20px;
+  background-color: #0000009e;
+  border-radius: 5px;
 }
 .counter > div {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 .counter > div > span:first-child {
-    font-size: 60px;
-    margin-bottom: 20px;
-    user-select: none;
+  font-size: 60px;
+  margin-bottom: 20px;
+  user-select: none;
 }
 .counter > div > span:last-child {
-    color: #FD3267;
-    text-transform: uppercase;
+  color: #fd3267;
+  text-transform: uppercase;
 }
 .copyright {
-    position: fixed;
-    left: 50%;
-    bottom: 0;
-    width: 265px;
-    transform: translateX(-50%);
-    background-color: #FD3267;
-    color: white;
-    padding: 5px 10px;
-    letter-spacing: 1px;
-    z-index: 55;
-    text-align: center;
+  position: fixed;
+  left: 50%;
+  bottom: 0;
+  width: 265px;
+  transform: translateX(-50%);
+  background-color: #fd3267;
+  color: white;
+  padding: 5px 10px;
+  letter-spacing: 1px;
+  z-index: 55;
+  text-align: center;
+}
+
+@media (max-width: 450px) {
+  .container {
+    width: 85%;
+    margin-top: 50px;
+  }
+  .container h1 {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  .counter {
+    margin-top: 100px;
+  }
+  .container > h1,
+  .counter > div > span:first-child {
+    font-size: 30px;
+  }
+  .counter > div > span:last-child {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 451px) and (max-width: 660px) {
+  .container {
+    width: 85%;
+  }
+  .container > h1,
+  .counter > div > span:first-child {
+    font-size: 40px;
+  }
 }
